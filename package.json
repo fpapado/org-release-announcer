@@ -8,8 +8,8 @@
   "scripts": {
     "dev": "nodemon --exec \"npm start\"",
     "start": "probot run ./index.js",
-    "lint": "standard --fix",
-    "test": "jest && standard"
+    "simulate:release": "probot simulate release ./test/fixtures/release.published.json ./index.js",
+    "test": "jest"
   },
   "dependencies": {
     "probot": "^6.0.0"
@@ -22,10 +22,5 @@
   },
   "engines": {
     "node": ">= 8.3.0"
-  },
-  "standard": {
-    "env": [
-      "jest"
-    ]
   }
 }
