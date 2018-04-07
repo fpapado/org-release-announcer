@@ -46,3 +46,9 @@ Currently, `robot.receive` seems to break with our fixtures; you can verify thin
 ```sh
 npm run simulate:release
 ```
+
+## Thanks and Inspiration
+Credits to the Glitch starter templates:
+
+For Probot:
+https://glitch.com/~probot-hello-world
