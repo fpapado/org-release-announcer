@@ -7,8 +7,8 @@
   "repository": "https://github.com/fpapado/org-release-announcer.git",
   "scripts": {
     "dev": "nodemon --exec \"npm start\"",
-    "start": "probot run ./lib/index.js",
-    "simulate:release": "probot simulate release ./test/fixtures/release.published.json ./lib/index.js",
+    "start": "probot run ./index.js",
+    "simulate:release": "probot simulate release ./test/fixtures/release.published.json ./index.js",
     "test": "jest"
   },
   "dependencies": {
