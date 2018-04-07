@@ -33,7 +33,9 @@ git clone https://fpapado/org-release-announcer
 ```
 2) Make any customisations you want to `index.js`, such as adding a functional announcer.
 
-3) See [docs/deploy.md](docs/deploy.md) about the permissions and specifics of setting up the  Github App.
+3) Copy `.env.example` to `.env`.
+
+4) See [docs/deploy.md](docs/deploy.md) about the permissions and specifics of setting up the  Github App.
 
 If you end up with something that can be shared (e.g. a specific announcer), I would be eager to know about it.
 
