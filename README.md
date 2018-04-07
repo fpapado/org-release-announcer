@@ -49,7 +49,13 @@ This app requires these **Permissions & events** for the GitHub App:
 If you end up with something that can be shared (e.g. a specific announcer), I would be eager to know about it.
 
 ## Testing
-Currently, `robot.receive` seems to break with our fixtures; you can verify things work with:
+Run the tests with npm:
+
+```sh
+npm test
+```
+
+You can also simulate a release event from the fixtures. By default, it prints the announcement to the console:
 
 ```sh
 npm run simulate:release

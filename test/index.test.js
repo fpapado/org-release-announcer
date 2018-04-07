@@ -12,27 +12,22 @@ describe('org-announcer', () => {
     // Create a robot instance
     robot = createRobot();
 
-    // Mock out announcer
+    // Mock announcer
     announce = jest.fn().mockReturnValue(Promise.resolve({}));
 
     // Initialise app
-    app(announce)(robot);
+    app({announce})(robot);
 
     // NOTE: not used atm, leaving for posterity
     // Mock out the Github API (for replying to it with our probot)
-    // github = {
-    // issues: {
-    // createComment: jest.fn().mockReturnValue(Promise.resolve({}))
-    // }
-    // };
+    github = {};
 
     // Pass the mocked out Github API to the robot instance
-    // robot.auth = () => Promise.resolve(github);
+    robot.auth = () => Promise.resolve(github);
   });
 
   describe('release is published', () => {
     it('calls the announcer with the payload contents', async () => {
-      // NOTE: this currently breaks :/
       // Simulates delivery of a payload
       await robot.receive({event: 'release', payload});
       await expect(announce).toHaveBeenCalledTimes(1);
