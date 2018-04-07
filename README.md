@@ -32,11 +32,19 @@ Self-hosting would be my recommendation; I certainly don't want access to your d
 git clone https://fpapado/org-release-announcer
 ```
 [Degit is a good tool for this](https://github.com/Rich-Harris/degit)
+
 2) Make any customisations you want to `index.js`, such as adding a functional announcer.
 
-3) Copy `.env.example` to `.env`.
+3) Copy `.env.example` to `.env`. Use those files as reference whenever `.env` and API Keys are mentioned in the docs below.
 
-4) See [docs/deploy.md](docs/deploy.md) about the permissions and specifics of setting up the  Github App.
+4) See [Probot's docs](https://probot.github.io/docs/deployment/#create-the-github-app) about the permissions and specifics of setting up the  Github App.
+This app requires these **Permissions & events** for the GitHub App:
+
+- Repository contents - **Read-only**
+- Repository metadata - **Read-only**
+  - [x] Check the box for **Release** events
+
+5) See [Probot's docs for deployment](https://probot.github.io/docs/deployment/#deploy-the-app) for deployment options.
 
 If you end up with something that can be shared (e.g. a specific announcer), I would be eager to know about it.
 
