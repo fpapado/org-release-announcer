@@ -31,6 +31,7 @@ Self-hosting would be my recommendation; I certainly don't want access to your d
 ```shell
 git clone https://fpapado/org-release-announcer
 ```
+[Degit is a good tool for this](https://github.com/Rich-Harris/degit)
 2) Make any customisations you want to `index.js`, such as adding a functional announcer.
 
 3) Copy `.env.example` to `.env`.
